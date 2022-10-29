@@ -1,3 +1,15 @@
+<bold>Para descargar proyecto en casa:</bold>
+
+<ul>
+<li>Clonan proyecto desde visual code</li>
+<li>Duplical .env.example y le ponen .env</li>
+<li>Teclean composer update</li>
+<li>correr migraciones php artisan migra:fresh --seed (Primero hacer lo de la nota)</li>
+</ul>
+
+<p>Nota: para correr migraciones es neceario primero crear la base de datos y cambiarle en el .env DB_DATABASE=???</p>
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

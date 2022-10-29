@@ -10,4 +10,14 @@ class Alumno extends Model
     use HasFactory;
 
     protected $table = 'alumnos';
+
+    protected $fillable = [
+        'n_control',
+        'nombre',
+        'edad',
+        'sexo',
+        'fecha_nacimiento',
+        'domicilio',
+        'telefono'
+    ];
 }

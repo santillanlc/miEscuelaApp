@@ -17,4 +17,4 @@ Route::post('/alumno/actualizar/{id}', [AlumnoController::class, 'actualizar']);
 Route::get('/especialidades', [EspecialidadController::class, 'consultar']);
 Route::get('/especialidad/registrar', [EspecialidadController::class, 'registrar']);
 Route::post('/especialidad/guardar', [EspecialidadController::class, 'guardar']);
-
+Route::get('/especialidad/eliminar/{id}', [EspecialidadController::class, 'eliminar']);

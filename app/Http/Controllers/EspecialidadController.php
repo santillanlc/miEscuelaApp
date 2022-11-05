@@ -21,4 +21,11 @@ class EspecialidadController extends Controller
 
         return redirect('/especialidades');
     }
+
+    function eliminar($id){
+        $especialidad = Especialidad::find($id);
+        $especialidad->delete();
+
+        return redirect('/especialidades');
+    }
 }

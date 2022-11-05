@@ -15,3 +15,6 @@ Route::get('/alumno/editar/{id}', [AlumnoController::class, 'editar']);
 Route::post('/alumno/actualizar/{id}', [AlumnoController::class, 'actualizar']);
 //Especialidades
 Route::get('/especialidades', [EspecialidadController::class, 'consultar']);
+Route::get('/especialidad/registrar', [EspecialidadController::class, 'registrar']);
+Route::post('/especialidad/guardar', [EspecialidadController::class, 'guardar']);
+

@@ -11,4 +11,14 @@ class EspecialidadController extends Controller
         $especialidades = Especialidad::paginate(5);
         return view('especialidad.especialidades', compact('especialidades'));
     }
+
+    function registrar(){
+        return view('especialidad.registrar');
+    }
+
+    function guardar(Request $datos){
+        $especialidad = Especialidad::create($datos->post());
+
+        return redirect('/especialidades');
+    }
 }

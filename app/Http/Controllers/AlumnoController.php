@@ -22,4 +22,11 @@ class AlumnoController extends Controller
 
         return redirect('/alumnos');
     }
+
+    function eliminar($id){
+        $alumno = Alumno::find($id);
+        $alumno->delete();
+
+        return redirect('/alumnos');
+    }
 }
